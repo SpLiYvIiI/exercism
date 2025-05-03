@@ -3,7 +3,7 @@ pub fn is_armstrong_number(num: u32) -> bool {
     let number_count: u32 = num.to_string().chars().count() as u32;
     let mut sum: u32 = 0;
     loop {
-        if num_ref <= 0 {
+        if num_ref == 0 {
             break;
         }
         sum += (num_ref % 10).pow(number_count);
